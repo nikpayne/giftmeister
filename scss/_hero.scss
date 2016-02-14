@@ -26,67 +26,65 @@
       }
     }
   }
-  .cta {
-    flex-grow: 1;
-    padding: 0 0 0 rem(15px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    &__main {
-      height: 500px;
-      width: 400px;
-      background: white;
-      border: 1px solid #ededed;
-      .tile {
+}
 
-        #slider {
-          position: relative;
-          width: 100%;
-          overflow: hidden;
-          padding: 0;
-          height: rem(160px);
+.cta {
+  flex-grow: 1;
+  padding: 0 0 0 rem(15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__wrapper {
+    height: 500px;
+    width: 400px;
+    background: white;
+    border: 1px solid #ededed;
+  }
+  .tile {
+    #slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 0;
+      height: rem(120px);
+      list-style: none;
 
-          li {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            height: rem(160px);
-            line-height: rem(160px);
-
-            &:not(:first-child) {
-              opacity: 0;
-            }
-            img {
-              max-width: 100%;
-              max-height: 100%;
-              height: 35%;
-              width: auto;
-            }
-          }
+      li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: rem(120px);
+        line-height: rem(120px);
+        opacity: 0;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          height: 40%;
+          width: auto;
         }
       }
-
-      img {
-        max-width: rem(138px);
-        width: rem(138px);
-        height: auto;
-        &:hover { opacity: .85; }
-      }
     }
-    &__section {
-      text-align: center;
-      h1 {
-        color: $accent;
-        font-family: "hitchcock";
-        font-size: rem(48px);
-      }
-      img {
-        margin: 0 .5rem;
-      }
+  }
+
+  img {
+    max-width: rem(138px);
+    width: rem(138px);
+    height: auto;
+    &:hover { opacity: .85; }
+  }
+  &__section {
+    text-align: center;
+    h1 {
+      color: $accent;
+      font-family: "hitchcock";
+      font-size: rem(48px);
+    }
+    img {
+      margin: 0 .5rem;
     }
   }
 }

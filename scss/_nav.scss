@@ -10,7 +10,7 @@
   .logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: rem(15px);
     display: block;
     height: 100%;
     line-height: rem(80px);
@@ -32,7 +32,7 @@
   .login {
     position: absolute;
     top: rem(0px);
-    right: 0;
+    right: rem(15px);
     display: block;
     height: 100%;
 
