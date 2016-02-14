@@ -1,3 +1,11 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
+@font-face {
+    font-family: hitchcock;
+    src: url('fonts/hitchcock.ttf');
+}
+
 @function rem($size) {
   @return #{$size / 16px;}rem;
 }
@@ -8,21 +16,35 @@
   @return #{$rem*$size}rem;
 }
 
+$base: #304041;
+$accent: #E34F51;
+$bright: #50E3C2;
+
 * { box-sizing: border-box; }
 
 html { font-size: 16px; }
 
 body {
+  font-family: "roboto", sans-serif;
   padding: 0;
   margin:0;
-  font-family: 'Titillium Web', sans-serif;
   font-size: rem(16px);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'teko', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.row {
+  max-width: rem(990px);
+  padding: 0 rem(15px);
+  margin: 0 auto;
+}
+.main {
+  padding-top: rem(40px);
+  padding-bottom: rem(60px);
+  background: #fafafa;
 }
 
 @import "nav";

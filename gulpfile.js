@@ -9,7 +9,7 @@ gulp.task('serve', ['sass'], function() {
     proxy: 'localhost/marketing'
   });
   gulp.watch(['./*.html']).on('change', sync.reload);
-  gulp.watch(['./_*.scss','./scss/app.scss'],['sass']);
+  gulp.watch(['./scss/_*.scss','./scss/app.scss'],['sass']);
 });
 
 gulp.task('sass', function() {

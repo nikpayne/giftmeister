@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+
+  .iphone {
+    position: relative;
+    .body {
+      top: 0;
+      left: 0;
+      max-width: 342px;
+    }
+    .screen {
+      position: absolute;
+      top: 105px;
+      left: 28px;
+      width: 290px;
+      height: 512px;
+      border-radius: 2px;
+      overflow: hidden;
+      text-align: center;
+      background: rgba(0,0,0,1);
+      img {
+        position: absolute;
+        left: -310px;
+        max-height: 100%;
+      }
+    }
+  }
+  .cta {
+    flex-grow: 1;
+    padding: 0 0 0 rem(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__main {
+      height: 500px;
+      width: 400px;
+      background: white;
+      border: 1px solid #ededed;
+      .tile {
+
+        #slider {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          padding: 0;
+          height: rem(160px);
+
+          li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            height: rem(160px);
+            line-height: rem(160px);
+
+            &:not(:first-child) {
+              opacity: 0;
+            }
+            img {
+              max-width: 100%;
+              max-height: 100%;
+              height: 35%;
+              width: auto;
+            }
+          }
+        }
+      }
+
+      img {
+        max-width: rem(138px);
+        width: rem(138px);
+        height: auto;
+        &:hover { opacity: .85; }
+      }
+    }
+    &__section {
+      text-align: center;
+      h1 {
+        color: $accent;
+        font-family: "hitchcock";
+        font-size: rem(48px);
+      }
+      img {
+        margin: 0 .5rem;
+      }
+    }
+  }
+}

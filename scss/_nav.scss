@@ -1,0 +1,54 @@
+.header {
+  height: rem(80px);
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  background: rgba(255,255,255,1);
+  .row {
+    height: 100%;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    line-height: rem(80px);
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-55%);
+      display: inline;
+      max-height: rem(24px);
+      max-width: rem(155.33333px);
+      transition: fill 250ms ease;
+
+      &:hover {
+        path { fill: $accent; }
+      }
+    }
+  }
+  .login {
+    position: absolute;
+    top: rem(0px);
+    right: 0;
+    display: block;
+    height: 100%;
+
+    font-weight: bold;
+    color: $base;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: rem(80px);
+    svg {
+      max-height: rem(24px);
+      max-width: rem(19.2px);
+      margin-bottom: rem(-3px);
+    }
+    &:hover {
+      color: $accent;
+      svg path { fill: $accent; }
+    }
+  }
+}
