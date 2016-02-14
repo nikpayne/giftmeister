@@ -1,8 +1,19 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300|Roboto:400,300";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 @font-face {
   font-family: hitchcock;
   src: url("fonts/hitchcock.ttf"); }
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("fonts/Gotham-Light.ttf"); }
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("fonts/Gotham-Book.ttf"); }
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("fonts/Gotham-Medium.ttf"); }
 
 * {
   box-sizing: border-box; }
@@ -11,7 +22,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Gotham Medium", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 1rem; }
@@ -123,10 +134,33 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   text-align: center; }
   .cta__wrapper {
-    height: 500px;
     width: 400px;
     background: white;
     border: 1px solid #ededed; }
+  .cta__app-store {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0 0.9375rem; }
+    .cta__app-store a {
+      text-align: center;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding: 0 0.625rem;
+      max-height: 2.9375rem; }
+      .cta__app-store a:nth-child(1) {
+        text-align: right; }
+      .cta__app-store a:nth-child(2) {
+        text-align: left; }
+    .cta__app-store img {
+      max-width: 8.625rem;
+      width: 8.625rem; }
+      .cta__app-store img:hover {
+        opacity: .85; }
   .cta .tile #slider {
     position: relative;
     width: 100%;
@@ -148,20 +182,12 @@ h1, h2, h3, h4, h5, h6 {
         max-height: 100%;
         height: 40%;
         width: auto; }
-  .cta img {
-    max-width: 8.625rem;
-    width: 8.625rem;
-    height: auto; }
-    .cta img:hover {
-      opacity: .85; }
-  .cta__section {
+  .cta__headline {
     text-align: center; }
-    .cta__section h1 {
+    .cta__headline h1 {
       color: #E34F51;
       font-family: "hitchcock";
       font-size: 3rem; }
-    .cta__section img {
-      margin: 0 .5rem; }
 
 .footer {
   background: white;

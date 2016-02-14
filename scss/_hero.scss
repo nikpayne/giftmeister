@@ -37,10 +37,27 @@
   justify-content: center;
   text-align: center;
   &__wrapper {
-    height: 500px;
     width: 400px;
     background: white;
     border: 1px solid #ededed;
+  }
+  &__app-store {
+    display: flex;
+    flex-direction: row;
+    padding: 0 rem(15px);
+    a {
+      text-align: center;
+      flex-grow: 1;
+      padding: 0 rem(10px);
+      max-height: rem(47px);
+      &:nth-child(1) { text-align: right; }
+      &:nth-child(2) { text-align: left; }
+    }
+    img {
+      max-width: rem(138px);
+      width: rem(138px);
+      &:hover { opacity: .85; }
+    }
   }
   .tile {
     #slider {
@@ -69,22 +86,12 @@
       }
     }
   }
-
-  img {
-    max-width: rem(138px);
-    width: rem(138px);
-    height: auto;
-    &:hover { opacity: .85; }
-  }
-  &__section {
+  &__headline {
     text-align: center;
     h1 {
       color: $accent;
       font-family: "hitchcock";
       font-size: rem(48px);
-    }
-    img {
-      margin: 0 .5rem;
     }
   }
 }
