@@ -12,7 +12,10 @@
       text-align: center;
       color: $base;
       border-top: 1px solid #ededed;
-      small { font-size: rem(14px); }
+      small {
+        font-size: rem(14px);
+        color: #4C6061;
+      }
     }
   }
   .column {
@@ -44,7 +47,7 @@
       font-size: rem(14px);
       letter-spacing: letterspacing(15,14);
       a {
-        font-weight: 300;
+        font-weight: 400;
         color: $base;
         i { margin-right: .25rem; }
         &:hover { color: $accent; }

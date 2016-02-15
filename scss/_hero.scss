@@ -19,7 +19,7 @@
       overflow: hidden;
       text-align: center;
       background: rgba(0,0,0,1);
-      
+
       img {
         position: absolute;
         left: -310px;
@@ -42,6 +42,14 @@
     background: white;
     border: 1px solid #ededed;
   }
+  &__logo {
+    height: rem(60px);
+    text-align: center;
+    img {
+      max-height: rem(29px);
+      margin: rem(50px) 2rem 1rem 2rem;
+    }
+  }
   &__app-store {
     display: flex;
     flex-direction: row;
@@ -58,10 +66,19 @@
     img {
       max-width: rem(138px);
       width: rem(138px);
-      &:hover { opacity: .85; }
+      &:hover {
+        opacity: .85;
+        position: relative;
+        bottom: rem(4px);
+        animation: jiggle 200ms infinite;
+      }
     }
   }
-  .tile {
+  &__slideshow {
+    span {
+      font-family: "roboto";
+      color: #bbb;
+    }
     #slider {
       position: relative;
       width: 100%;
@@ -90,10 +107,6 @@
   }
   &__headline {
     text-align: center;
-    h1 {
-      color: $accent;
-      font-family: "hitchcock";
-      font-size: rem(48px);
-    }
+    img { margin: rem(50px) rem(45px) rem(35px) rem(45px); }
   }
 }

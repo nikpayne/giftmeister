@@ -10,11 +10,17 @@
   @return #{$rem*$size}rem;
 }
 
+@keyframes jiggle {
+  0%   {bottom: 0;}
+  50%  {bottom: rem(4px);}
+  100% {bottom: 0;}
+}
+
 $base: #304041;
 $accent: #E34F51;
 $bright: #50E3C2;
 $purple: #9013FE;
-$main-bg: #f0f0f0;
+$main-bg: #eee;
 $nav-border: #ededed;
 $nav-bg: white;
 
@@ -27,6 +33,7 @@ body {
   padding: 0;
   margin:0;
   font-size: rem(16px);
+  background: $main-bg;
 }
 
 h1, h2, h3, h4, h5, h6 {
