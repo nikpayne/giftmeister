@@ -1,8 +1,12 @@
 .header {
+  // display: none;
   height: rem(80px);
   width: 100%;
   border-bottom: 1px solid #ededed;
   background: rgba(255,255,255,1);
+  background: $nav-bg;
+  border-bottom: $nav-border;
+
   .row {
     height: 100%;
     position: relative;
@@ -23,9 +27,10 @@
       max-height: rem(24px);
       max-width: rem(155.33333px);
       transition: fill 250ms ease;
+      path { fill: $accent; }
 
       &:hover {
-        path { fill: $accent; }
+        path { fill: $base; }
       }
     }
   }
@@ -37,18 +42,18 @@
     height: 100%;
 
     font-weight: bold;
-    color: $base;
+    color: $accent;
     text-decoration: none;
-    font-family: 'Helvetica Neue', sans-serif;
     line-height: rem(80px);
     svg {
       max-height: rem(24px);
       max-width: rem(19.2px);
       margin-bottom: rem(-3px);
+      path { fill: $accent; }
     }
     &:hover {
-      color: $accent;
-      svg path { fill: $accent; }
+      color: $base;
+      svg path { fill: $base; }
     }
   }
 }
